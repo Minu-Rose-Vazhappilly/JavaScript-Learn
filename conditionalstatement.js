@@ -33,22 +33,4 @@ if(a>b){
 }else{
     console.log(`${b} is greater`);
 }
-//write a program to check second largest among three given numbers and arrange them in descending order.
- c = 9;
- d = 5;
- e = 10;
-
-let numbers = [c,d,e];
-
-for(let i = 0;i<3;i++){
-    for(let j = 0;j<=3-i-1;j++){
-        if(numbers[j]<numbers[j+1]){
-            temp = numbers[j];
-            numbers[j] = numbers[j+1];
-            numbers[j+1] = temp;
-        }
-    }
-}
-console.log(numbers);
-console.log(`second largest one is ${numbers[1]}`);
 
