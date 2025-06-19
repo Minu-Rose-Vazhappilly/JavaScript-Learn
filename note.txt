@@ -161,14 +161,21 @@ F || F = F
 NOT (!)
 
 
-increment(++) or decrement(--) operators
+5.increment(++) or decrement(--) operators
 x++
 x--
 
-shorthand operator
+6.shorthand operator
 
 +=   x =x+10;
 -=   x= x-10
+
+7.ternary operator
+condition?truestatemnt:falsestatemnt;
+
+8.truthy operator
+    if there is only one statement or one if use truthy
+    condition && statement (can be also used in react)
 
 conditional statemnets or decesion make statemnets
 to conditionally execute a statemnets
@@ -180,3 +187,19 @@ if else
     }
 
 switch case
+
+Looping statement
+---------------------
+-to execute a statement repeatedly in a  rpogramme file
+-Once control enters the loop - exit is only possible when condition is false.
+1.while
+
+syntax
+--------
+variable initialization
+while(condition){ //number of times the loop should execute.
+    statements
+    exit condition // increment or decrement condition.
+}
+
+2.for
