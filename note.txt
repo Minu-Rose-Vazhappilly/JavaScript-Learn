@@ -1,0 +1,182 @@
+Module 2 - JAVASCRIPT
+-----------------------------
+
+Features 
+    - it can be used in both front end and backend
+    - in front end - js provide behavior
+    - in backend - js hepls in logical operations
+    - Js support both procedural and object oriented programming(oops)
+    - its a dinamically tight language - datatype changes during runtime.
+    - single thread programming language, - Line by line execution.
+    
+Backend Procedural programming
+--------------------------------
+
+how to create a file.
+---------------------------
+    - filename.js
+    - node - environment to run js outside the browser.
+
+Display a content
+------------------
+console.log(content)
+
+How to run
+-----
+node filename.js
+
+to change directory: cd directoryname
+
+Datatypes
+
+Two types of datatype
+1.Primitive Data types - cannot be changes 
+                        - but can be reassigned.
+
+                        x = 'hello'....canot be changed inside the same variable.
+                        x='helo'
+    -string - sequence of characters,single quotes or double quotes
+    -number - 
+    -boolean    - true or false
+    -undefined - variable created but not assigned value.
+    -null       - intentional absence of value. x = null.
+    -bigint     -   lrger numbers eg:2^53
+    -symbol     -  identify uniquely - eg : uses while creating js libraries - symbol()
+
+2.Non primitive - combination of primitive data type - 
+    -object - should be stored as key value pairs
+    eg - object , array, functions.
+
+variables
+---------
+used to store data
+syntax
+    variable - value
+variable name is case sensitive.
+rules to create variable name - identifiers.
+---------------------------------------------
+1.variable name should not start with digit.
+2.subsequent characters can be alaphabeets ,digits,special characters.
+3.if there is more than one word in variable name
+        - camel case - eg carName.
+        - words can be separated by underscores.
+                eg:car_name...snake case
+
+                extra(cases)
+                -----
+                camel case-carName.
+                pascal case-CarName.
+                snake case - car_name.
+                kabab case- car-name.
+                train case- Car-Name.
+                upper snake case - CAR_NAME.
+                flat case - carname.
+                dot case - car.name
+            js cases 
+            ---------
+            flat case
+            camel case
+            snake case.
+
+keyword(important)
+-----------
+reserved words
+it gives special meaning to the variables
+
+    1.let - reassigning possible.
+            redeclaration is not possible.
+            hoisting not possible.
+            block level scope.
+                -only within curly braces.
+    2.const - no reassigning is possible
+                redeclaration is not possible.
+                hoisting not possible
+                global scope.not within loop because the value will changed in loop.
+    3.var - reassigning is possible.
+            redeaclaration is possible.
+            hoisting possible.
+            global scope.
+
+Hoisting (interview)
+--------------------
+using a variable before it is declared.
+only for var.
+    result will be shown as undefined
+
+concatenate.(imp)
+----------------
+(adding) appending one or more data types
+number + number = number
+string + number = string
+string + string = string
+
+template literal
+-----------------
+its a way of displaying content.
+
+context $(variable)
+
+Operators
+------------
+1.Assignment Operators
+    represented by =
+    eg:x=10.
+2.Arithmatic operators
+------------
+addition +
+subtraction -
+multiolication  *
+division /
+modulous %
+exponential **
+
+3.Relational Operators
+    >(greater than)
+    >= (greater than or equal to) 
+    < (less than) 
+    =<(less than or equal to) 
+    ==(double equal to)  
+    ===(triple equal to)
+
+    -relational operators return boolean value
+
+4.Logical operators
+--------------------
+used in between relational operators
+returns boolean values
+
+AND (&&) 
+T && T = T
+T && F = F
+F && T = F
+F && F = F
+
+OR (||)
+
+T || T = T
+T || F = T 
+F || T = T
+F || F = F
+
+NOT (!)
+
+
+increment(++) or decrement(--) operators
+x++
+x--
+
+shorthand operator
+
++=   x =x+10;
+-=   x= x-10
+
+conditional statemnets or decesion make statemnets
+to conditionally execute a statemnets
+if else
+    syntax
+    -------
+    if(condition){
+        statements;
+    }
+
+switch case
