@@ -162,4 +162,21 @@ console.log(product);
 //w.a.p to find a given number is armstrong or not.
 //armstrong = 153 = 1*3 + 5*3 + 3*3 = 153....
 
+number = 15 ;
+original = number;
+sum = 0;
+while(number!=0){
+    lastdigit = number % 10;
+    sum = sum + lastdigit**3;
+    number = Math.floor(number/10);
+}
+if(original == sum){
+    console.log("the given number is armstrong");
+    
+}else{
+    console.log('the given number is not armstrong');
+    
+}
+console.log(sum);
+
   
