@@ -162,7 +162,7 @@ console.log(product);
 //w.a.p to find a given number is armstrong or not.
 //armstrong = 153 = 1*3 + 5*3 + 3*3 = 153....
 
-number = 15 ;
+number = 153 ;
 original = number;
 sum = 0;
 while(number!=0){
@@ -178,5 +178,32 @@ if(original == sum){
     
 }
 console.log(sum);
+console.log('----------------------------------------------');
 
-  
+//w.a.p to print all numbers whose exponential is in the range of 8 to 36.user can input the power value
+// cubes :1 8 27 64 125 342 512 729 1000
+i = 1;
+exponumber = 2;
+while(i<=36){
+    expo = i**exponumber;
+    if(expo>=8 && expo<=36){
+        console.log(i);
+        
+    }
+    if(expo>36){
+        break;
+    }
+    i++;
+}
+console.log('----------------------------------');
+
+for(i=1;i<=5;i++){
+    console.log(i);
+    
+}
+number = 5;
+product = 1;
+for(i=1;i<=number;i++){
+    product = product * i;
+}
+console.log(product);
