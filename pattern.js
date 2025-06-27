@@ -187,3 +187,117 @@ for(rows=5;rows>=1;rows--){
     console.log(str);
     
 }
+console.log('--------------------');
+
+for(rows=1;rows<=4;rows++){
+    str = ""
+    for(space=4;space>rows;space--){
+        str +=" "
+    }
+    if(rows == 2 && rows == 3){
+       for(cols=1;cols<=2;cols++){
+        str+="*" + " "
+    } 
+    }
+    for(cols=1;cols<=rows;cols++){
+        str+="*" + " "
+    }
+    console.log(str);
+    
+}
+for(rows=1;rows<=4;rows++){
+    str = ""
+    for(cols = 1;cols<=7;cols++){
+        if(rows+cols == 5 || cols-rows == 3 || rows == 4){
+            str = str + "* "
+        }else{
+        str +="  "
+    }
+    }
+    console.log(str);
+    
+}
+console.log('-----------------------------');
+
+for(rows=1;rows<=5;rows++){
+    str = ""
+    for(cols = 1;cols<=5;cols++){
+        if(rows == 1 || rows == 5 || cols == 1 || cols==5){
+            str = str + "* "
+        }else{
+        str +="  "
+    }
+    }
+    console.log(str);
+    
+}
+console.log('-----------------------------');
+for(rows=4;rows>=1;rows--){
+    str = ""
+    for(cols = 1;cols<=7;cols++){
+        if(rows+cols == 5 || cols-rows == 3 || rows == 4){
+            str = str + "* "
+        }else{
+        str +="  "
+    }
+    }
+    console.log(str);
+    
+}
+for(rows=2;rows<=4;rows++){
+    str = ""
+    for(cols = 1;cols<=7;cols++){
+        if(rows+cols == 5 || cols-rows == 3 || rows == 4){
+            str = str + "* "
+        }else{
+        str +="  "
+    }
+    }
+    console.log(str);
+    
+}
+console.log('-------------------------------');
+for(rows=1;rows<=5;rows++){
+    str = ""
+    for(cols=1;cols<=5;cols++){
+        if(rows==1 || rows == 5 || rows+cols == 6 || cols==rows){
+            str = str + "* ";
+        }else{
+        str +="  "
+    }
+    }
+    console.log(str);
+}
+console.log('----------------------------------');
+
+for(rows=1;rows<=4;rows++){
+    str = ""
+    for(cols=1;cols<=rows;cols++){
+        if((rows+cols)%2 == 0){
+            str = str + "1 "
+        }else{
+            str = str + "0 "
+        }
+    }
+    console.log(str);
+    
+}
+console.log('------------------------------');
+
+rowscount = 5
+count = 11
+for(rows=1;rows<=5;rows++){
+    str = "";
+    for(space=1;space<rowscount;space++){
+        str+= "    ";
+        
+    }
+    rowscount--;
+    // console.log(str);
+    for(cols=1;cols<=(2*rows - 1);cols++){
+        str = str + count +"  " ;
+        count++
+    }
+    console.log(str);
+    
+}
