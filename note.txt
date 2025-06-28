@@ -230,3 +230,19 @@ natural umbers - 1,2,3...
 whole numbers - 0,1,2,3
 integers - -ve to positive  -2,-1,0,1,2,3
 
+functions
+-------------
+-   to execute a set of code repeatedly at DIFFERENT LOCATION OF THE programming.
+two part of functions
+-   function definition
+        place a set of code that need to be executed.
+        syntax 
+            function fname{
+                statement;
+            }
+-   function call
+     -to execute the  code
+        syntax
+            fname() 
+
+    functions are used to avoid Boiler plate(same set of codes repeating agin and again)
