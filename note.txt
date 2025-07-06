@@ -1,6 +1,6 @@
 Module 2 - JAVASCRIPT
 -----------------------------
-
+JAVASCRIPT Version - ES6 ECMASCRIPT6
 Features 
     - it can be used in both front end and backend
     - in front end - js provide behavior
@@ -237,7 +237,7 @@ two part of functions
 -   function definition
         place a set of code that need to be executed.
         syntax 
-            function fname{
+            function fname(arg1,arg2...,argnn){
                 statement;
             }
 -   function call
@@ -246,3 +246,90 @@ two part of functions
             fname() 
 
     functions are used to avoid Boiler plate(same set of codes repeating agin and again)
+
+    actual values = arguments
+    variables = parameters
+
+    function fname(param1,parm2){
+
+    }
+    fname(arg1,arg2);
+    --->variables created inside functions can only have functional scope.That means it cannot beused outside the function definition.
+    if the variable need to accessed outside the function.you need to return that variable.
+
+    ---->no staetements after return statement would not be executed.so it must be placed as the last statement inside the function definition.
+    arrow function.
+    ------------------------
+    syntax
+       const variablename = ()=>{} 
+       variablename(arg1,arg2...argn)
+        automatically return the value.without return statement.
+
+Types of functions
+----------------------
+1.call back function
+    ->function that are called by another function.
+    ->child function is passed as an argument to the parent function.
+2.Nested function
+    --->function is called by the another function.
+    (parent function calls the child function)
+    --->child function is defined inside the parent function
+
+    closure property?
+    variables inside the parent function can be accessed inside the child function but vice versa is not possible.
+    this scope is called lexical scope.
+
+3.predefined functions - developers just need to call them to do certain task.
+    example : log(),Math.floor(),String,Number(),parseInt() etc.
+
+4.synchronous function:functions which doesnot have timedelay
+5.Asynchronous function:function which have timedelay.
+ example:api calls,setTimeout()
+
+setTimeout is an asynchronous,callback,predefined function
+extra notes of 3/07/2025.
+6.Anonymous function
+
+
+DataStructure
+--------------
+specialized format for organizing retrieving and storing data
+ eg:array , stack ,list ,linked list,graph,hash,tree
+
+array
+---------
+-unlike variables array can hold more than one data of different datatype that are separated by commas and enclosed within a square bracket
+mutable datatype.
+index - is used as a key to hold the value
+        - starts with 0 0 - length-1
+length - total number of items in an array
+to access array elements - array[index]
+                        -   normal for loop
+                        - for in - displays index
+                        - for of - returns item of the array
+to add data to array
+----------------
+-push(item) - add items to the end of the array
+-unshift(item) - add item to the start of the array
+delete an from array
+--------------------
+-pop() - remove the last item from an array
+-shift() - remove the first item from an array 
+Algorithm 
+----------
+step by step procedure.
+
+flow chart 
+------------
+diagramatic representation of procedure.
+
+shapes used
+-----------
+oval - start and end
+paralellogram - inputs and outputs
+rectangle - statements
+diamonds - decision statement
+arrow - flow of the steps.
+
+binary search and linear search is important...More important is binary search.
+
