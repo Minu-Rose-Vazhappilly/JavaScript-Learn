@@ -315,6 +315,34 @@ delete an from array
 --------------------
 -pop() - remove the last item from an array
 -shift() - remove the first item from an array 
+Binary search
+---------------
+ can only be applied on sorted array in ascending order
+Algorithm
+(1) start
+(2) sort array in ascending order
+(3) initialize variable
+        low 
+        up
+(4)mid index - Math.floor(low+up/2)
+(5) compare the value of mid index with serach items
+    a}value in mid == searchitem
+        print prsent
+    b}value of mid < serachItem
+        low = mid+1
+    c}value of mid > searchitem
+        up = mid-1
+(6)repeat the step 4 & 5 until low>up
+(7)end
+array operators
+push  arr.push(item)
+pop  arr.pop()
+shift arr.shift(item)
+unshift arr.unshift(item,item)
+sort - to arrange array in ascending or deceneding order
+order -
+array - sort((a,b)=>a-b) = ascending
+array - sort((a,b)=>b-a) = descending
 Algorithm 
 ----------
 step by step procedure.

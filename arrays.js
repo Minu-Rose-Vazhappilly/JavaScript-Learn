@@ -101,14 +101,54 @@ arr1=[]
 for(i=0;i<arr.length;i++){
     for(j=i+1;j<arr.length;j++){
         if(arr[i]==arr[j]){
-            arr1.push(arr[i])
+            isduplicate = false;
+            for(k=0;k<arr1.length;k++){
+                if(arr1[k]==arr[i]){
+                    isduplicate = true;
+                }
+            }
+            if(isduplicate == false){
+                arr1.push(arr[i])
+            }
         }
     }
 }
 console.log(arr1.length==0?"No duplicate elements":arr1);
 //complete above question ..only needs duplicate element.
 //w.a.p to print whose pair sum = 6
-//a=[2,3,4,5]
+a=[2,3,4,5]
+isPresent = false
+for(i=0;i<a.length;i++){
+    for(j = i+1;j<a.length;j++){
+        if(a[i]+a[j] == 10){
+            isPresent = true
+            console.log(`(${a[i]},${a[j]})`);
+            
+        }
+    }
+}
+isPresent == false && console.log('no pair sum');
+
+p=[10,11,12,20,30]
+q=[11,20,25,30,33,30]
+pq=[]
+for(i=0;i<p.length;i++){
+    for(j=0;j<q.length;j++){
+        if(p[i]==q[j]){
+            isDuplicate = false;
+            for(k=0;k<pq.length;k++){
+                if(pq[k]==p[i]){
+                    isDuplicate = true;
+                }
+                
+            }
+            if(isDuplicate == false){
+                pq.push(p[i])
+            }
+        }
+    }
+}
+console.log(pq);
 
 
 
