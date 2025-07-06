@@ -23,3 +23,8 @@ function parent(){
     
 }
 parent()
+// setTimeout function
+
+setTimeout(()=>{
+    console.log('asynchronous function')
+},5000);
