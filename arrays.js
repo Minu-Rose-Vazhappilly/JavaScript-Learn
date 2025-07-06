@@ -1,3 +1,59 @@
+weekday = ['Mon','Tue','wed']
+console.log(weekday);
+
+console.log(typeof(weekday));
+//(key:value)
+//(index:value)
+console.log(weekday[0]);
+
+for(i=0;i<weekday.length;i++){
+    console.log(weekday[i]);
+    
+}
+weekday.push('Thurs')
+weekday.push('Fri')
+console.log(weekday);
+weekday.unshift('sun')
+console.log(weekday);
+console.log('-------------------');
+weekday.pop()
+console.log(weekday);
+
+
+
+for(let i in weekday){
+    console.log(i);
+    
+}
+for(let item of weekday){
+    console.log(item);
+    
+}
+expense = [15000,25000,50000,65000]
+// w.a.p to find the lowest expense
+min = expense[0]
+for(i=0;i<expense.length;i++){
+    if(min>expense[i]){
+        min = expense[i]
+    }
+}
+console.log(min);
+
+// w.a.p to find the highest expense
+max = expense[0]
+for(i=0;i<expense.length;i++){
+    if(max<expense[i]){
+        max = expense[i]
+    }
+}
+console.log(max);
+// w.a.p to find the total expense
+sum = 0;
+for(i=0;i<expense.length;i++){
+    sum+=expense[i]
+}
+console.log(sum);
+//w.a.p t o print whether 2 is present or not
 a = [10,11,12,2,3,4]
 searchItem = 2;
 isPresent = false;
