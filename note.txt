@@ -335,14 +335,23 @@ Algorithm
 (6)repeat the step 4 & 5 until low>up
 (7)end
 array operators
-push  arr.push(item)
-pop  arr.pop()
-shift arr.shift(item)
-unshift arr.unshift(item,item)
-sort - to arrange array in ascending or deceneding order
-order -
-array - sort((a,b)=>a-b) = ascending
-array - sort((a,b)=>b-a) = descending
+    1.push  arr.push(item)
+    2.pop  arr.pop()
+    3.shift arr.shift(item)
+    4.unshift arr.unshift(item,item)
+    5.sort - to arrange array in ascending or deceneding order
+        order -
+        array - sort((a,b)=>a-b) = ascending
+        array - sort((a,b)=>b-a) = descending
+    6.flat() - to change the dimension of an array
+        depth = infinity
+        a.flat()- change array into one dimension lower
+        array.flat(depth) - lower the array dimension into the specified depth
+        array.flat(infinity) - lower the array dimension directly to one dimension.
+    7.foreach()-used to access each element from given array and return data.
+    8.map() - used to access each data from the given array and return new array having same number of elements in the parent array.
+    9.filter() - used to access each elements from the givem array and return all the elements as array that satisfy a specific condition
+    10.find() - access all elements and gives the first element which satisfies the condition
 Algorithm 
 ----------
 step by step procedure.
@@ -360,4 +369,9 @@ diamonds - decision statement
 arrow - flow of the steps.
 
 binary search and linear search is important...More important is binary search.
+
+Nested array
+------------
+array within another array
+
 

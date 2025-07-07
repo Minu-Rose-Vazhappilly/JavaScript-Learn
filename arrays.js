@@ -128,7 +128,25 @@ for(i=0;i<a.length;i++){
     }
 }
 isPresent == false && console.log('no pair sum');
+console.log('-----------another method----------');
 
+a=[2,3,4,5]
+low=0
+up = a.length-1
+pairsum = 11
+isPresent=false
+while(low<up){
+    if(a[low]+a[up]==pairsum){
+        isPresent = true
+         console.log(`(${a[low]},${a[up]})`);
+         low++;
+    }else if(a[low]+a[up]>pairsum){
+        up--
+    }else{
+        low++
+    }
+}
+isPresent == false && console.log('no pair sum');
 p=[10,11,12,20,30]
 q=[11,20,25,30,33,30]
 pq=[]
