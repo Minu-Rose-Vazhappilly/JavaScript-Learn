@@ -52,12 +52,15 @@ for(let item of employee){
 }
 console.log('-----------------------------');
 //print total numbers of employee
-count =0
-for(let item of employee){
-    count++;
+// count =0
+// for(let item of employee){
+//     count++;
     
-}
-console.log(count);
+// }
+// console.log(count);
+console.log('------------count-----------------');
+let count = employee.reduce((acc) => acc + 1, 0);
+console.log("Total employees:", count); 
 console.log('-----------------------------');
 //print developer employee details
 for(let item of employee){
@@ -67,7 +70,7 @@ for(let item of employee){
     }
     
 }
-
+ 
 console.log('-----------------------------');
 //print employee whose salary > 30000
 for(let item of employee){
@@ -100,5 +103,42 @@ console.log(employee);
 console.log('-----------------------------');
 // print the employ name whose have the higest salary
 highsal = employee.sort((a, b) => b[4] - a[4])[0][1]; 
-
 console.log(highsal);
+console.log('---------using array methods------------');
+employee =[ 
+    [1000,'Neel','developer','kochi',25000,3],
+    [1001,'Max','tester','TVM',20000,2],
+    [1002,'MAxwell','QA','kochi',35000,4],
+    [1003,'Vyom','QA','kochi',45000,5],
+    [1004,'Laisha','tester','TVM',55000,7],
+    [1005,'Aahan','developer','TVM',15000,1],
+    [1006,'Aahil','QA','kochi',20000,2],
+    [1007,'Shayan','developer','kochi',30000,3],
+    [1008,'Nihaan','developer','TVM',25000,3]
+]
+// print all employee name 
+employee.forEach(element => {
+    console.log(element[1]);
+    
+});
+//print developer employee details
+developdet = employee.filter((item)=>item[2]=='developer').forEach((item)=>console.log(item));
+
+//print employee whose salary > 30000.
+empsal = employee.filter((item)=>item[4]>30000).forEach((item)=>console.log(item[1]));
+// print details of employee Laisha
+Laishadet = employee.filter((item)=>item[1]=='Laisha').forEach((item)=>console.log(item));
+// print the employ name whose have the higest salary
+highsal=employee.reduce((acc,item)=>acc[4]>item[4]?acc:item)
+console.log(highsal[1]);
+//sort employee based on their salary in descending orde
+
+employee.sort((a, b) => b[4] - a[4]); 
+
+console.log(employee);
+console.log('-----------------------------');
+//sort employee based on their experience in ascending order
+employee.sort((a, b) => a[4] - b[4]); 
+
+console.log(employee);
+console.log('-----------------------------');

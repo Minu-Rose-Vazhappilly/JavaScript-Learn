@@ -352,6 +352,10 @@ array operators
     8.map() - used to access each data from the given array and return new array having same number of elements in the parent array.
     9.filter() - used to access each elements from the givem array and return all the elements as array that satisfy a specific condition
     10.find() - access all elements and gives the first element which satisfies the condition
+    11.reduce((accumilator,currentvalue))- it returns a single value fromthe given array.
+                eq:largest number,smallest number,average,sum etc
+    12.some() - it returns boolean values based on the condition.
+    13.includes()-it returns boolean values based on items in given array.should pass item into he parenthesis
 Algorithm 
 ----------
 step by step procedure.
