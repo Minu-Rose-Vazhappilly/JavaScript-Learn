@@ -356,6 +356,11 @@ array operators
                 eq:largest number,smallest number,average,sum etc
     12.some() - it returns boolean values based on the condition.
     13.includes()-it returns boolean values based on items in given array.should pass item into he parenthesis
+    14.splice(startindex,deletecount,items...) - to add or delete items from any part of the array.modifies the existing array
+    15.indexOf()-to get the index of the particular item.
+    16.lastIndexOf(item) - returns the last index of the item.
+    17.slice(startindex,endindex) - used to create a subarray.ending index is excluded.returns new subarray.if ending index is not mentioned ,it will returns array till ending array.
+
 Algorithm 
 ----------
 step by step procedure.
@@ -377,5 +382,26 @@ binary search and linear search is important...More important is binary search.
 Nested array
 ------------
 array within another array
+
+String
+-------
+sequence of characters stored in different memmory locations.
+string is immutable.
+you can reassign it.
+
+String methods
+--------------
+1.startswith() - to check whethre the string starts with a particular character or not - returns boolean values.it is case sensitive
+
+note-[javascript can run in browser] == use inspect then console.type the program press enter
+
+2.endsWith() - to check whethre the string ends with a particular character or not - returns boolean values.it is case sensitive.does it folows the sequence.
+
+3.subString - to create a Sub string from a given string.ending index is excluded
+
+4.toUpperCase()
+5.toLowerCase()
+6.trim()
+7.slice(startindex,endindex) - create a Sub array. [diff between subString() and slice()]slice can have neg value.last value starts with -1
 
 
