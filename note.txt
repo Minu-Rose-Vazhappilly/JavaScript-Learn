@@ -391,7 +391,7 @@ you can reassign it.
 
 String methods
 --------------
-1.startswith() - to check whethre the string starts with a particular character or not - returns boolean values.it is case sensitive
+1.startsWith() - to check whethre the string starts with a particular character or not - returns boolean values.it is case sensitive
 
 note-[javascript can run in browser] == use inspect then console.type the program press enter
 
@@ -403,5 +403,9 @@ note-[javascript can run in browser] == use inspect then console.type the progra
 5.toLowerCase()
 6.trim()
 7.slice(startindex,endindex) - create a Sub array. [diff between subString() and slice()]slice can have neg value.last value starts with -1
+8.split(separator) - to divide the string based on the separator.it return a new array.
+9.array.from() - returns an array having all leters in a given string.
+10.replace() - to change a first matching content in a given string
+11.replaceAll() - to change all matching content in a given string
 
 
