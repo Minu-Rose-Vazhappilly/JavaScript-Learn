@@ -407,5 +407,31 @@ note-[javascript can run in browser] == use inspect then console.type the progra
 9.array.from() - returns an array having all leters in a given string.
 10.replace() - to change a first matching content in a given string
 11.replaceAll() - to change all matching content in a given string
+reduceRight() - refer
 
+Object
+------------
+- unlike array objects can store more than one data of different datatype with more clarity
+syntax
+---------
+variable = {
+    key:value,...
+}
+get item
+1}objectname['key']
+2}objectname.key //if we are using a specific key(user specified key) we can use this method
+
+add item
+----------
+objectname['key']=value
+object.assign(objectname,{key:value,...})
+
+update
+--------
+reassign
+1)objectname['key']=value
+
+delete
+-------
+delete objectname.key
 
