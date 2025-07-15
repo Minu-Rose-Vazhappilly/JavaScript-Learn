@@ -6,7 +6,7 @@ Features
     - in front end - js provide behavior
     - in backend - js hepls in logical operations
     - Js support both procedural and object oriented programming(oops)
-    - its a dinamically tight language - datatype changes during runtime.
+    - its a dynamically tight language - datatype changes during runtime.
     - single thread programming language, - Line by line execution.
     
 Backend Procedural programming
@@ -125,7 +125,7 @@ Operators
 ------------
 addition +
 subtraction -
-multiolication  *
+multiplication  *
 division /
 modulous %
 exponential **
@@ -334,7 +334,7 @@ Algorithm
         up = mid-1
 (6)repeat the step 4 & 5 until low>up
 (7)end
-array operators
+array methods
     1.push  arr.push(item)
     2.pop  arr.pop()
     3.shift arr.shift(item)
