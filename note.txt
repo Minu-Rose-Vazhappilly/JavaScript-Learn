@@ -11,6 +11,8 @@ Features
     
 Backend Procedural programming
 --------------------------------
+-its a programming paradigm(style)-execution happens steb by step
+                                    - functions and variables are considered as  separate entity (placed separately)
 
 how to create a file.
 ---------------------------
@@ -44,8 +46,8 @@ Two types of datatype
     -symbol     -  identify uniquely - eg : uses while creating js libraries - symbol()
 
 2.Non primitive - combination of primitive data type - 
-    -object - should be stored as key value pairs
-    eg - object , array, functions.
+    -object datatype - should be stored as key value pairs
+    eg - {object , array, functions.}-under object datatype
 
 variables
 ---------
@@ -229,7 +231,7 @@ prime numbers- those natural numbers which have two factors that is 1 and the nu
 natural umbers - 1,2,3...
 whole numbers - 0,1,2,3
 integers - -ve to positive  -2,-1,0,1,2,3
-
+pattern printing - for machine tests
 functions
 -------------
 -   to execute a set of code repeatedly at DIFFERENT LOCATION OF THE programming.
@@ -290,7 +292,7 @@ setTimeout is an asynchronous,callback,predefined function
 extra notes of 3/07/2025.
 6.Anonymous function
 
-
+product based company - dsa,every sorts
 DataStructure
 --------------
 specialized format for organizing retrieving and storing data
@@ -360,7 +362,7 @@ array methods
     15.indexOf()-to get the index of the particular item.
     16.lastIndexOf(item) - returns the last index of the item.
     17.slice(startindex,endindex) - used to create a subarray.ending index is excluded.returns new subarray.if ending index is not mentioned ,it will returns array till ending array.
-
+    18.spread()-to merge to arrays,repreasented by ...
 Algorithm 
 ----------
 step by step procedure.
@@ -435,3 +437,111 @@ delete
 -------
 delete objectname.key
 
+OBJECT ORIENTED PROGRAMMING (oops)language
+-----------------------------------------
+- its a programming paradigm which consider real time entity into objects and class
+- Basics
+-----
+1)class - Blue print which contains common features from which different objects are created.
+2)object - it is the real time entity created from the class
+3)reference - real memory location where the properties and methods are stired 
+4)property - variable inside a class
+5)method - function inside a class.
+
+syntax
+-------
+class classname{
+    //properties 
+    //constructors
+    //method
+}
+//it is not manadatory that all the above three exist in the class always.
+instance for a class
+---------------------
+const objectname = new classname()
+
+syntax to give constructors
+----------------------------
+constructor(){} - used to intialialize properties
+constructor is invoked automatically when object is created.
+syntax to create method
+-------------------------
+functionName(){
+
+}
+functionName()
+this - instance variable - inorder to access properties and methods inside the class
+
+pillars of oops
+----------------
+1)Inheritance
+2)Polymorphism
+3)Encapsulation - refer.
+4)Abstraction - refer.
+
+Inheritance
+-------------
+-to access properties and methods from one class to another.
+-keyword used to inherit - extends
+-syntax
+---------
+class B extends A {}
+ A - parent class / super / base 
+ B - Child Class / Derived / sub/
+
+ Types of Inheritance(classical Inheritance)
+ Single Inheritance
+ Multilevel Inheritance
+ Hierarichical Inheritance
+ Multiple Inheritance - js doesnot supported
+ Hybrid Inheritance - combination of the above inheritance
+                        - doesnot support 
+
+Polymorphism
+-------------
+poly - many 
+morphism - forms
+ 1)Method overloading
+ -methods with same name but different arguments
+ execute based on the number of arguments
+ -js doesnot support support method overloading.
+ -achieved using rest operator-(...)
+ 2)Method Overriding.
+ -method with same name and same number of arguments.
+ -last written will execute
+ -supported by js.
+
+Exeception Handling
+--------------------
+Exeception - error 
+error Handling
+
+try catch block
+syntax
+-------
+try{
+    statemets which might commit error
+}
+catch{
+    statement that need to be executed incase of error.
+}
+finally{
+    execute in both case - optional
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+                    FRONTEND JAVASCRIPT
+                    --------------------
+- to provide behavior 
+Browser - it is an application program that provides an interface with all the resources in the internet.
+Browser understanding language - html,css,js
+DOM - DOCUMENT OBJECT MODEL - js accepts html elements with the help of DOM
+- its a tree structure of html DOCUMENT
+- created by browser
+- js access DOM to get html elements
+refer - BOM Browser Object Model
+Methods to access DOM
+1)document.getElementByTagName()
+2)document.getElementBylastName()
+3)document.getElementById()
+4)document.querySelector()
+5)document.querySelectorAll()
