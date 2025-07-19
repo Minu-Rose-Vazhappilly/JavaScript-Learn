@@ -540,8 +540,25 @@ DOM - DOCUMENT OBJECT MODEL - js accepts html elements with the help of DOM
 - js access DOM to get html elements
 refer - BOM Browser Object Model
 Methods to access DOM
-1)document.getElementByTagName()
-2)document.getElementBylastName()
-3)document.getElementById()
-4)document.querySelector()
-5)document.querySelectorAll()
+1)document.getElementByTagName() - returns htmlcollection. it is an array
+2)document.getElementBylastName() - returns htmlcollection.
+3)document.getElementById() - returns the tag directly
+4)document.querySelector()-h1,.class,#id - returns the first satisfying tag
+5)document.querySelectorAll() - returns nodelist - collection of all satisfying tags
+
+js
+----
+1)internal-placed inside the html file
+    -script tag - placed after the body
+2)external--create file with extension .js and place the connection in script tag
+scripttag - srcpath 
+
+to change the content
+--------------------
+- .innerHTML
+-style
+----
+tag.style.propert = "value"
+- Events
+ actions performed by the user that leads to a change in DOM.
+ eg:click,submit,load,keydown,change etc...
