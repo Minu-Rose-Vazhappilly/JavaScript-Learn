@@ -562,3 +562,32 @@ tag.style.propert = "value"
 - Events
  actions performed by the user that leads to a change in DOM.
  eg:click,submit,load,keydown,change etc...
+
+ Browser Storage
+ ----------------
+DataBase : Used to store data - large amount data
+Browser Storage - used to store data - limit amount data
+
+Types
+-------
+1)local storage - permanent storage
+2)session storage - temporary storage
+
+- data must be stored as key value pairs
+key and value must be string} ---->important
+------------------------------
+
+operations
+----------
+1}add 
+    setItem(key,value)
+2}read 
+    getItem("key")
+3}update
+    setItem("key","value")
+4}delete
+    removeItem("key")
+to convert a object to string JSON.stringify
+to convert string to object JSON.parse.
+
+window.location = 'filename' to move to another file
