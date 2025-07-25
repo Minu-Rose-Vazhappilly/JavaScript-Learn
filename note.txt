@@ -532,7 +532,7 @@ finally{
                     FRONTEND JAVASCRIPT
                     --------------------
 - to provide behavior 
-Browser - it is an application program that provides an interface with all the resources in the internet.
+Browser - it is an application program that provides an interface with all the resources in the internet.(communication - user,resources)
 Browser understanding language - html,css,js
 DOM - DOCUMENT OBJECT MODEL - js accepts html elements with the help of DOM
 - its a tree structure of html DOCUMENT
@@ -591,3 +591,96 @@ to convert a object to string JSON.stringify
 to convert string to object JSON.parse.
 
 window.location = 'filename' to move to another file
+
+
+API - Application Programming Interface - Inorder to communicate between different resources available in the inetrnet. - (communication - application1,application2)
+
+Types of API
+------------
+1public api
+2.Partner api - one more user with authentication
+3.Private api - for company pupose.more confidential data
+4.Composite api - combination above two - maybe public-partner so on 
+
+HTTP - Hyper Text Transfer Protocol - protocol to communicate throught internet.
+----
+Protocols - set of rules
+-methods to transfer data.
+->POST - to add data to the application.
+->GET - to get data from application 
+->PUT - to update existing data
+->DELETE - to remove data
+
+HTTPS - HyperTextTransferProtocol
+FTP - File Transfer Protocol
+SMTP - Simple Mail Transfer Protocol
+TCP - Transmission Control Protocol
+UDP - User Datagram Protocol
+
+Parts of Request   request sending from a to b
+----------------- a to b
+body - data to share
+header - secret-data  - token,content-type,api keys...
+
+Response Series. b to a(Response from b to a)
+----------------
+100 - 199  1xx - information (check according to information)
+200 - 299   2xx     - success response if b execute as per a's request
+300 - 399   3xx        -redirection (check according to path)
+400 - 499   4xx       - Error Response   its due to client error a's mistake
+500 - 599   5xx        - Error Response its dues to serverside error b's mistake
+
+JSON - Javascript Object Notation
+---------------------------------
+Format of sharing data between two different application.
+If front end and back end have different language they must me be communicated for that purpose a common format JSON is created
+syntax
+------
+("key":value)
+-all data must be placed as key:value pairs
+-each key:value pair must be separated by commas and enclosed in curly brackets.
+
+Url -  Uniform resource locator - address of the resouces available in the internet.
+
+
+RESTful API ARCHITECTURE
+Refer the image of Restful API
+
+explain through example in interview.
+
+=>something went wrong.server side error.
+Refer -  SOAP - SIMPLE OBJECT ACCESS ACCESS Protocol
+Testing Tool 
+-----------
+1.POSTMAN - REALTOOL
+2.THUNDER CLIENT - vs code - extension 
+
+create API
+----------
+1)Ajax - Asynchronous Javascript Xml
+to set up api's
+-based on xmlHttpRequest()-class-asynchronous function
+open()- used to connect with the application
+send() - request send 
+readyState - it is a property inside xmlHttpRequest() class-  when requests sends its value automatically changes.
+0 - no initialization 
+1 - req send
+2 - rq received
+3 -req processed
+4 - response
+-onreadystateChange - eventListener - 
+onreadystatechange is an event listener for the readystatechange event.
+This event is triggered every time the readyState of the XMLHttpRequest object changes.
+-status - holds the series number(property inside xmlHttpRequest()class)
+-responseText - holds the response from the server(property inside xmlHttpRequest()class)
+2)Fetch
+ - based on Promise()
+ -Promise also handles asynchronous functions
+ -stages of Promise
+    1)pending stage - if request is not accepted or rejected
+    2)resolve stage- if request is resolved as per our request
+            - response is accessed using  then() 
+    3)reject stage - if request is not resolved 
+         response is accessed using catch()
+
+3)async-await
