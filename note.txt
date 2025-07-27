@@ -684,3 +684,13 @@ This event is triggered every time the readyState of the XMLHttpRequest object c
          response is accessed using catch()
 
 3)async-await
+- these are two keywords.not a separte approach.
+performs like a synchronous function
+await keyword should only be given inside async function
+to make synchronous we use async-await.
+syntax
+-------
+function name(){
+    const result = await api ()
+
+}
