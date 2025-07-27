@@ -1,3 +1,4 @@
+//brought data from jsonplaceholder application to our application
 //create an oinstance for the class
 const http = new XMLHttpRequest()
 console.log(http.readyState);
