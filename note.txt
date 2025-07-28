@@ -302,6 +302,7 @@ array
 ---------
 -unlike variables array can hold more than one data of different datatype that are separated by commas and enclosed within a square bracket
 mutable datatype.
+mutable means it is changeable,array can be modified after it has been declared.
 index - is used as a key to hold the value
         - starts with 0 0 - length-1
 length - total number of items in an array
@@ -688,9 +689,32 @@ This event is triggered every time the readyState of the XMLHttpRequest object c
 performs like a synchronous function
 await keyword should only be given inside async function
 to make synchronous we use async-await.
+asyn-await can only be used when it returns promise.
 syntax
 -------
 function name(){
     const result = await api ()
 
 }
+
+How browser resolves Javascript functions?
+v8 engines
+-----------
+refer - chrome v8 engine:def - helps to execute javascript in browser:
+The V8 engine is an open-source JavaScript engine developed by Google. It is written in C++ and is primarily designed to execute JavaScript code. V8 is used in multiple applications, especially in Google Chrome, but later utilized to create Node.js for server-side coding.
+
+Call stack
+-----------
+call stack - structure used in chrome vite engine
+async and syn func does not store together in call stack.
+
+How Does the Call Stack Work?
+JavaScript operates in a single-threaded environment, meaning that it can only execute one operation at a time. The Call Stack is the part of JavaScript that keeps track of the execution process.
+Function Call: When a function is called, the JavaScript engine pushes the function onto the Call Stack. The function remains in the stack until it completes its execution.
+Executing the Function: The JavaScript engine processes the function in the stack. It runs the code inside the function until it reaches the end or encounters another function call.
+Nested Function Calls: If a function calls another function, the new function is pushed onto the Call Stack. The engine continues to execute the newly pushed function while the previous one waits for completion.
+Returning from a Function: Once a function finishes executing, it is removed (popped) from the stack. The JavaScript engine then continues executing the function that is now at the top of the stack.
+Completion of Program: The process continues until all functions in the stack are executed and removed. Once the stack is empty, the JavaScript engine has completed the execution of the program.
+therefore 
+proririty queue - microtask queue
+event loop - checking stack is empty or not
