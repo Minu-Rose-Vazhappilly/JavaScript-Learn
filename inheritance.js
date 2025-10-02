@@ -19,7 +19,6 @@ obj.methodb()
 class A1{
     methoda1(){
         console.log('inside method a1');
-        
     }
 }
 class B1 extends A1{

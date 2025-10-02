@@ -1,0 +1,125 @@
+1. Compiled Language
+
+In compiled languages, the entire code is translated into machine code (0s and 1s) before execution.
+
+A compiler does this job.
+
+After compilation, you get a separate file (like .exe in Windows) that the CPU runs directly.
+
+
+Example languages: C, C++, Java (partially, because of JVM)
+
+
+
+2.Interpreted Language
+
+In interpreted languages, the code is translated line-by-line at runtime by an interpreter.
+
+No separate file like .exe is created.
+
+🔹 Example languages: JavaScript, Python, PHP
+
+
+Both are translated into machine codes but in different ways:
+        one entirely at once. => if there is a error no output
+        other one line by line => if there is error it shows till the error. 
+              =>if error is in 5th line it shows first four lines.and then error.
+
+
+what is Javascript?
+ History of Javascript? 
+ Javascript Versions? 
+ How to run Javascript?
+
+1. What is JavaScript?
+
+JavaScript is a high-level, interpreted programming language mainly used for making websites interactive.
+
+HTML is used for structure, CSS for style, and JavaScript for behavior.
+
+Example: Without JavaScript a button is just a button. With JavaScript, you can make the button show a message, change color, or submit data.
+
+JavaScript is single-threaded and works on an event-driven model.
+
+2. History of JavaScript
+
+1995: Created by Brendan Eich at Netscape in just 10 days.
+
+First name: Mocha → then renamed to LiveScript → finally JavaScript (to ride on Java’s popularity at that time, but both are different languages).
+
+Standardized by ECMA International as ECMAScript (ES) in 1997.
+
+Today, JavaScript is everywhere: browsers, servers (Node.js), mobile apps, desktop apps.
+
+3. JavaScript Versions (ECMAScript versions)
+
+ES1 (1997): First version.
+
+ES3 (1999): Widely adopted.
+
+ES5 (2009): Strict mode, JSON support.
+
+ES6 (2015): Biggest update! Introduced let, const, arrow functions, classes, promises, template literals, etc.
+
+After ES6: New features are added every year.
+
+ES7 (2016): includes(), exponentiation operator **
+
+ES8 (2017): async/await
+
+ES9 (2018): Rest/Spread operators for objects
+
+ES10 (2019): flat(), flatMap()
+
+ES11 (2020): Nullish coalescing ??, Optional chaining ?.
+
+…and updates continue yearly.
+
+4. How to Run JavaScript?
+
+🔹 In Browser (most common):
+
+Open any browser (Chrome, Edge, Firefox).
+
+Press F12 → Go to Console tab.
+
+Type JavaScript code and press Enter.
+
+Example:
+
+console.log("Hello, JavaScript!");
+
+
+🔹 In HTML file:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Example</title>
+</head>
+<body>
+  <h1>Hello</h1>
+  <script>
+    alert("Hello from JavaScript!");
+  </script>
+</body>
+</html>
+
+
+Open this file in browser → You’ll see an alert popup.
+
+🔹 Using Node.js (outside browser):
+
+Install Node.js from nodejs.org
+.
+
+Save code in a file: app.js.
+
+Run in terminal:
+
+node app.js
+
+
+
+Above Questions Interview Prep Answer:
+JavaScript is a high-level, interpreted programming language mainly used to make web pages interactive. It was created in 1995 by Brendan Eich, first named Mocha, later standardized as ECMAScript. Important versions are ES5 (2009) and ES6 (2015) which brought modern features, and now updates come yearly, the latest being ES2025. We can run JavaScript directly in browser consoles, inside HTML using <script> tags, or outside browsers with Node.js

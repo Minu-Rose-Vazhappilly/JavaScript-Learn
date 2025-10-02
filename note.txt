@@ -32,7 +32,7 @@ to change directory: cd directoryname
 Datatypes
 
 Two types of datatype
-1.Primitive Data types - cannot be changes 
+1.Primitive Data types - cannot be changes - Primitive Data Types are the most basic building blocks of JavaScript data.
                         - but can be reassigned.
 
                         x = 'hello'....canot be changed inside the same variable.
@@ -539,10 +539,10 @@ DOM - DOCUMENT OBJECT MODEL - js accepts html elements with the help of DOM
 - its a tree structure of html DOCUMENT
 - created by browser
 - js access DOM to get html elements
-refer - BOM Browser Object Model
+refer - BOM Browser Object Model:BOM is a way to interact with the browser using JavaScript. It includes objects like window, navigator, location, history, etc
 Methods to access DOM
-1)document.getElementByTagName() - returns htmlcollection. it is an array
-2)document.getElementBylastName() - returns htmlcollection.
+1)document.getElementByTagName() - returns htmlcollection.Not truly an array. doesnot support array methods
+2)document.getElementByClassName() - returns htmlcollection.
 3)document.getElementById() - returns the tag directly
 4)document.querySelector()-h1,.class,#id - returns the first satisfying tag
 5)document.querySelectorAll() - returns nodelist - collection of all satisfying tags
@@ -557,12 +557,33 @@ scripttag - srcpath
 to change the content
 --------------------
 - .innerHTML
+    .innerHTML is a JavaScript property used to get or set the HTML content inside an element on a webpage.
+
+                example: <p id="demo">Hello <b>World</b></p>
+
+                let content = document.getElementById("demo").innerHTML;
+                console.log(content); // Outputs: Hello <b>World</b>
+
+                let content = document.getElementById("demo");
+                console.log(content); // Outputs: <p id="demo">Hello <b>World</b></p>
+
+
 -style
 ----
 tag.style.propert = "value"
+        examples:
+                let heading = document.getElementById("demo");
+
+                heading.style.color = "blue";              // Sets text color
+                heading.style.backgroundColor = "yellow";  // Sets background color
+                heading.style.fontSize = "24px";           // Sets font size
+                heading.style.padding = "10px";            // Sets padding
+                heading.style.border = "2px solid red";    // Sets border
+
 - Events
  actions performed by the user that leads to a change in DOM.
  eg:click,submit,load,keydown,change etc...
+ An event listener is a function/property that waits for a specific event to occur on an HTML element (like a button click, a key press, form submission, etc.) and then responds to it by executing some code.
 
  Browser Storage
  ----------------
@@ -571,8 +592,8 @@ Browser Storage - used to store data - limit amount data
 
 Types
 -------
-1)local storage - permanent storage
-2)session storage - temporary storage
+1)local storage - permanent storage;Data persists even after the browser is closed or the computer is restarted.
+2)session storage - temporary storage;Data is only available during the page session
 
 - data must be stored as key value pairs
 key and value must be string} ---->important
@@ -595,7 +616,7 @@ window.location = 'filename' to move to another file
 
 
 API - Application Programming Interface - Inorder to communicate between different resources available in the inetrnet. - (communication - application1,application2)
-
+An API is a set of rules that allow different software applications to communicate with each other 
 Types of API
 ------------
 1public api
@@ -649,8 +670,43 @@ Refer the image of Restful API
 
 explain through example in interview.
 
+explanation from chatgpt
+---------------------------
+✅ What is a RESTful API?
+RESTful API (Representational State Transfer) is an architectural style used to design networked applications (especially web services).
+It allows different systems (like front-end and back-end, or different apps) to communicate with each other over the internet using HTTP methods (like GET, POST, PUT, DELETE) and data format like JSON.
+
+📦 Key Components of a RESTful API (based on your info):
+1. Client-Server Communication (Request & Response)
+The client (A) sends a request to the server (B).
+
+The server processes the request and sends back a response.
+
+2. Parts of a Request (from A to B)
+Part	Description
+URL	Address of the resource (e.g., https://example.com/users)
+Headers	Contains metadata like API keys, content type, token (used for security and proper formatting)
+Body	Contains actual data (in POST/PUT) in JSON format
+
+3. Response from B to A
+Response Code	Type	Meaning
+1xx	Informational	Request received, continue process
+2xx	Success	Request processed successfully (e.g., 200 OK)
+3xx	Redirection	Resource moved to a different URL
+4xx	Client Error	Client (A) made a mistake (e.g., 404 Not Found, 401 Unauthorized)
+5xx	Server Error	Server (B) failed to process (e.g., 500 Internal Server Error)
+
+🔁 HTTP Methods in REST API
+These are the main methods used to manipulate resources on the server:
+
+Method	Purpose	Example
+GET	Read data	GET /users to get user list
+POST	Add new data	POST /users with user info
+PUT	Update existing data	PUT /users/1 to update user with id 1
+DELETE	Remove data	DELETE /users/1 to delete user with id 1
+
 =>something went wrong.server side error.
-Refer -  SOAP - SIMPLE OBJECT ACCESS ACCESS Protocol
+Refer -  SOAP - SIMPLE OBJECT ACCESS ACCESS Protocol:SOAP is a protocol used to allow programs running on different operating systems to communicate with each other using HTTP and XML.
 Testing Tool 
 -----------
 1.POSTMAN - REALTOOL
@@ -675,7 +731,11 @@ This event is triggered every time the readyState of the XMLHttpRequest object c
 -status - holds the series number(property inside xmlHttpRequest()class)
 -responseText - holds the response from the server(property inside xmlHttpRequest()class)
 2)Fetch
+Fetch() is used to create API 
  - based on Promise()
+ A Promise is a JavaScript object from the Promise class that handles asynchronous operations.
+   Promise represents the eventual result (success or failure) of an asynchronous operation.
+   json returns a promise.
  -Promise also handles asynchronous functions
  -stages of Promise
     1)pending stage - if request is not accepted or rejected
@@ -690,6 +750,23 @@ performs like a synchronous function
 await keyword should only be given inside async function
 to make synchronous we use async-await.
 asyn-await can only be used when it returns promise.
+
+
+✅ Start with a Clear Definition:
+"In JavaScript, async/await is a modern syntax used to handle asynchronous operations more readably and synchronously. It's built on top of Promises and helps avoid chaining multiple .then() calls."
+
+✅ Explain the Keywords:
+async → Used before a function to make it return a Promise.
+
+await → Pauses the execution inside the async function until the Promise resolves.
+
+✅ Explain Why We Use It:
+Clean and readable code
+
+Avoids callback hell or deep .then() chaining
+
+Easier error handling with try...catch
+
 syntax
 -------
 function name(){
@@ -718,3 +795,7 @@ Completion of Program: The process continues until all functions in the stack ar
 therefore 
 proririty queue - microtask queue
 event loop - checking stack is empty or not
+
+
+
+

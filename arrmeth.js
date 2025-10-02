@@ -33,8 +33,8 @@ console.log(even);
 even = a.find((item)=>item%2==0)
 console.log(even);
 //w.a.p to check whether even numbers fis presnt or not
-even = a.some((item)=>item%2==0)
-console.log(even?'Present':'Not Present');
+        even = a.some((item)=>item%2==0)
+        console.log(even?'Present':'Not Present');
 
 even = a.includes(22)
 console.log(even?'Present':'Not Present');
